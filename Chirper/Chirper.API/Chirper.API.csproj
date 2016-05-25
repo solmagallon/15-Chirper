@@ -181,6 +181,10 @@
     <Compile Include="Migrations\201605252006314_InitialCreate1.Designer.cs">
       <DependentUpon>201605252006314_InitialCreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605252025509_AddChirperUser.cs" />
+    <Compile Include="Migrations\201605252025509_AddChirperUser.Designer.cs">
+      <DependentUpon>201605252025509_AddChirperUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ChirperUser.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -206,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605252006314_InitialCreate1.resx">
       <DependentUpon>201605252006314_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605252025509_AddChirperUser.resx">
+      <DependentUpon>201605252025509_AddChirperUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

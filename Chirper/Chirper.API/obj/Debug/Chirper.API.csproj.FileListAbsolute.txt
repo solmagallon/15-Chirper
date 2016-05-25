@@ -79,6 +79,6 @@ C:\dev\15-Chirper\Chirper\Chirper.API\bin\System.Web.Http.xml
 C:\dev\15-Chirper\Chirper\Chirper.API\bin\System.Web.Http.WebHost.xml
 C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.dll
 C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.pdb
-C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.Migrations.InitialCreate.resources
 C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.csproj.GenerateResource.Cache
 C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.Migrations.InitialCreate1.resources
+C:\dev\15-Chirper\Chirper\Chirper.API\obj\Debug\Chirper.API.Migrations.AddChirperUser.resources
