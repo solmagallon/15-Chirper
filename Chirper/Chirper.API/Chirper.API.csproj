@@ -166,53 +166,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\AccountsController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Infrastructure\AuthorizationRepository.cs" />
+    <Compile Include="Infrastructure\ChirperAuthorizationServerProvider.cs" />
     <Compile Include="Infrastructure\ChirperDataContext.cs" />
-    <Compile Include="Migrations\201605252006314_InitialCreate1.cs" />
-    <Compile Include="Migrations\201605252006314_InitialCreate1.Designer.cs">
-      <DependentUpon>201605252006314_InitialCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605252025509_AddChirperUser.cs" />
-    <Compile Include="Migrations\201605252025509_AddChirperUser.Designer.cs">
-      <DependentUpon>201605252025509_AddChirperUser.cs</DependentUpon>
+    <Compile Include="Migrations\201605262131393_InitialCreate.cs" />
+    <Compile Include="Migrations\201605262131393_InitialCreate.Designer.cs">
+      <DependentUpon>201605262131393_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ChirperUser.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\RegistrationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605252006314_InitialCreate1.resx">
-      <DependentUpon>201605252006314_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605252025509_AddChirperUser.resx">
-      <DependentUpon>201605252025509_AddChirperUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605262131393_InitialCreate.resx">
+      <DependentUpon>201605262131393_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

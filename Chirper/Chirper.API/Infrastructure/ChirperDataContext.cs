@@ -34,7 +34,8 @@ namespace Chirper.API.Infrastructure
             modelBuilder.Entity<ChirperUser>()
              .HasMany(u => u.Comments)
              .WithRequired(c => c.User)
-             .HasForeignKey(c => c.UserId);
+             .HasForeignKey(c => c.UserId)
+             .WillCascadeOnDelete(false);
 
             base.OnModelCreating(modelBuilder);
         }
